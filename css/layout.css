@@ -1,0 +1,234 @@
+/*大头部（header banner + header channal）*/
+.header{
+    background-color: white;
+    height: 255px;
+    width: 100%;
+}
+
+/*大导航栏（导航栏 + 图片背景 + logo）*/
+.header-banner{
+    position: relative;
+    display: flex;
+    height: 155px;
+    background-image: url("../assets/images/header-image.png.avif");
+    background-size:cover; 
+    background-position: center;    
+}
+
+/*导航栏（分为三部分）*/
+.header-nav{
+    display: grid;
+    grid-template-columns: 36% 33% 31%;
+    height: 64px;
+    padding: 0 0 0 24px;
+    width: 100%;
+    position: relative;
+}
+
+@media(min-width: 1300px) {
+    .header-nav{
+        padding: 0 24px;
+    }
+}
+
+/*左边部分 页面*/
+.header-nav-left-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+@media(min-width: 1300px)
+{
+    .header-nav-left-section{
+        margin-right: 30px;
+    }
+}
+
+/*中间部分 搜索框*/
+.header-nav-middle-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*右边部分 用户功能*/
+.header-nav-right-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+/*导航栏第二大部分*/
+.header-channal{
+    font-size: 13px;
+    height: 100px;
+    margin: 0 20px;
+    display: grid;
+    grid-template-columns: 10% 71% 19%;
+    grid-template-rows: 1fr;
+}
+
+/*分类导航栏左边部分*/
+.header-channal-left-section{
+    display: flex;
+    padding-right: 4px;
+}
+
+/*分类导航栏中间部分*/
+.header-channal-middle-section{
+    display: grid;
+    position: relative;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    padding:  17px 20px 17px 10px;
+}
+
+@media (min-width: 1350px) {
+    .header-channal-middle-section{
+        grid-template-columns: repeat(11,1fr);
+    }
+}
+
+@media (min-width: 1692px) {
+    .header-channal-middle-section{
+        grid-template-columns: repeat(12,1fr);
+    }
+}
+
+/*分隔线*/
+.header-channal-middle-section::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 66px;
+    background-color: rgb(227, 229, 231);
+    right: 6px;
+}
+
+
+/*分类导航栏右边部分*/
+.header-channal-right-section{
+    display: grid;
+    grid-auto-flow:column;
+    grid-column-end:auto;
+    grid-column-start:span 1; 
+    grid-template-rows:1fr 1fr;
+    row-gap: 10px;
+    padding: 17px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+/*视频部分*/
+.main-part{
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5,1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    margin: 0 20px;
+}
+
+@media(min-width: 1380px) {
+    .main-part{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(4,1fr);
+    }
+}
+
+/*字体设置*/
+@media (min-width: 1350px) {
+    .header-channal{
+        font-size: 14px;
+    }
+}
+
+/*页面宽度变化*/
+
+@media (min-width: 1100px) and (max-width: 1140px) {
+    .header-channal,
+    .main-part
+    {
+        margin: 0 calc(100vw - 1080px);
+    }
+    .header-channal{
+        grid-template-columns: 10% 67% 23%;
+    }
+}
+@media (min-width: 1141px) and (max-width: 1300px) {
+    .header-channal,
+    .main-part
+    {
+        margin: 0 60px;
+    }
+    .header-channal{
+        grid-template-columns: 10% 67% 23%;
+    }
+}
+@media (min-width: 1301px) and (max-width: 1400px) {
+    .header-channal,
+    .main-part
+    {
+        margin: 0 calc(40vw - 460px);
+    }
+    .header-channal{
+        grid-template-columns: 10% 70% 20%;
+    }
+}
+@media (min-width: 1201px) and (max-width: 1400px) {
+    .header{
+        height: 266px;
+    }
+    .header-banner{
+       height: 156px; 
+    }
+    .header-channal{
+        height: 110px;
+    }
+}
+
+@media (min-width: 1401px) and (max-width: 1550px) {
+    .header-channal,
+    .main-part{
+        margin: 0 60px;
+    }
+    .header{
+        height: 273px;
+    }
+    .header-banner{
+       height: 158px; 
+    }
+    .header-channal{
+        height: 115px;
+    }
+}
+
+@media (min-width: 1551px) {
+    .header-channal,
+    .main-part{
+        margin: 0 140px;
+    }
+    .header{
+        height: 280px;
+    }
+    .header-banner{
+       height: 160px; 
+    }
+    .header-channal{
+        height: 120px;
+        grid-template-columns: 10% 73% 17%;
+    }
+}

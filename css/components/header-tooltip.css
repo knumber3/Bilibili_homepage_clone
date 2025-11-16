@@ -1,0 +1,280 @@
+.login-button-tip {
+    box-sizing: border-box;
+    border-color: rgb(227, 229, 231);
+    border-style: solid;
+    border-width: 0.666667px;
+    width: 359px;
+    height: 235px;
+    background-color: white;
+    color: rgb(24, 25, 28);
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 22px 20px;
+    font-weight: 500 !important;
+}
+
+.login-button-tip-title{
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+.login-button-tip-content{
+    width: 319px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 7px;
+}
+
+.login-button-tip-content-item{
+    display: flex;
+    align-items: center;
+}
+
+.login-tip-content-item-icon{
+    color: rgb(0, 174, 236);
+}
+
+.login-button-tip-button{
+    box-sizing: border-box;
+    background-color: #00b5e5;
+    width: 319px;
+    height: 40px;
+    padding: 10px 0;
+    border-radius: 8px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+
+.register-tip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.register-button{
+    color: #00b5e5;
+    margin-left: 3px;
+}
+
+
+/*会员按钮 通知按钮 动态按钮 收藏按钮 历史按钮 创作中心按钮*/
+.membership-button,
+.message-button, 
+.news-button,
+.favorites-button, 
+.history-button,
+.create-center-button,
+.tooltip-port,
+.submit-port{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    cursor: pointer;
+    justify-content: center;
+    position: relative;
+    overflow: visible;
+}
+
+.middle-buttons-tooltip{
+    box-sizing: border-box;
+    border-color: rgb(227, 229, 231);
+    border-style: solid;
+    border-width: 0.666667px;
+    width: 359px;
+    height: 128px;
+    background-color: white;
+    color: rgb(24, 25, 28);
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 22px 20px;
+}
+
+.middle-buttons-tooltip-text{
+    display: block;
+    width: 100%;
+    color: #9499A0;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+/*会员tip*/
+.membership-button-tip {
+    box-sizing: border-box;
+    border-color: rgb(227, 229, 231);
+    border-style: solid;
+    border-width: 0.666667px;
+    display: flex;
+    width: 443px;
+    height: 260px;
+    background-color: white;
+    color: rgb(24, 25, 28);
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 22px 20px;
+    font-weight: 500 !important;
+}
+
+.membership-button-tip-title{
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.membership-button-tip-content{
+    width: 300px;
+    height: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 7px;
+    margin-left: 50px;
+}
+
+.membership-button-tip-content-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.membership-button-tip-content-item:hover {
+    color: rgb(251, 113, 153);
+}
+
+.membership-button-tip-button{
+    box-sizing: border-box;
+    background-color: rgb(255, 236, 241);
+    display: flex;
+    width: 418px;
+    height: 72px;
+    padding: 14px 9px 13px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    margin-left: -7px;
+}
+
+.membership-button-tip-button-left-part{
+    width: 50%;
+}
+
+.left-part-text1{
+    color: rgb(251, 113, 153);
+
+}
+
+.left-part-text2{
+    color: rgb(251, 113, 153);
+}
+
+.membership-button-tip-button-right-part{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.membership-button-tip-button-right-part-button{
+    display: flex;
+    width: 140px;
+    height: 40px;
+    background-color: rgb(251, 113, 153);
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    position: relative;
+}
+
+.btn-corner{
+    width: 48px;
+    height: 14px;
+    background: linear-gradient(270deg, rgb(255, 198, 93) 0%,  rgb(255, 238, 201) 100%);
+    color: rgb(91, 46, 0);
+    background-color: #00b5e5;
+    position: absolute;
+    border-radius: 2px;
+    right: -5px;
+    top: -10px;
+    font-size: 10px;
+}
+
+.submit-tooltip{
+    display: flex;
+    flex-direction: row;
+    border-color: rgb(227, 229, 231);
+    border-style: solid;
+    border-width: 0.666667px;
+    border-radius: 8px;
+    width: 331px;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 8px 10px;
+    background-color: white;
+    right: 0;
+    transition: opacity 1s ease, visibility 1s ease;
+}
+
+.submit-tooltip-item{
+    width: 20%;
+    height: 100%;
+    box-sizing: border-box;
+    color: rgb(97, 102, 109);
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.submit-tooltip-item:hover{
+    background-color: rgb(227, 229, 231);
+}
+
+/*tooltip元素*/
+.tooltip{
+    display: none;
+    position: absolute;
+    top: 130%; 
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 1s ease, visibility 1s ease;
+    z-index: 2;
+    visibility: hidden; /* 用 visibility 来辅助控制显示状态 */
+}
+
+.tooltip2{
+    position: absolute;
+    top: 120%; 
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+    visibility: hidden; /* 用 visibility 来辅助控制显示状态 */
+}
+
+
+/* .tooltip-port:hover .tooltip{
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}*/
+
+ .submit-port:hover .tooltip2{
+    opacity: 1;
+    visibility: visible;
+}  
+
+.tooltip.show {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+

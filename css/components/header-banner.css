@@ -1,0 +1,177 @@
+/*左边栏首页连接*/
+.homepagelogo-homepage-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*主页小logo*/
+.zhuzhan-icon{
+    margin-right: 4px;
+}
+
+/*弹跳效果*/
+.jump-box {
+    display: inline-block;
+    transition: transform 0.1s ease;
+  }
+  
+  /* 鼠标悬停时触发动画 */
+  .jump-box:hover {
+    animation: bounce 0.4s ease;
+  }
+  
+  /* 定义跳动关键帧 */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    60% {
+      transform: translateY(-8px);
+    }
+  }
+  
+/* .anime-link-container,
+.live-link-container,
+.game-link-container,
+.shop-link-container,
+.comic-link-container,
+.tournam-link-container,
+.event-link-container
+{
+    transition: transform 0.2s ease;   
+} */
+
+
+/*活动连接（宽屏显示）*/
+@media (max-width: 1200px) {
+    .event-link-container{
+        display: none;
+    }
+}
+
+
+
+/*左边栏下载连接*/
+.download-button-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*下载小logo*/
+.download-client-trigger__icon{
+    margin-right: 4px;
+}
+
+/*搜索框整体*/
+.search-box{
+    display: flex;
+    align-items: center;
+    background-color: #F1F2F3;
+    border-radius: 8px;
+    height: 40px;
+    width: 90%;
+    
+}
+
+.search-box:hover{
+    background-color: white;
+}
+
+/*搜索文本框*/
+.search-input{
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    padding: 0 10px;
+}
+
+
+.search-input::placeholder{
+    font-weight: 500;
+}
+
+/*搜索按钮*/
+.nav-search-btn{
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+.nav-search-btn:hover{
+    background-color: #e4e8ed;
+}
+
+/*登录容器*/
+.header-login-port{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/*登录按钮*/
+.header-login-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 174, 236);
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.join-member-button{
+    color: #00b5e5;
+    margin-left: 3px;
+}
+
+
+/*投稿容器*/
+.submit-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*投稿按钮*/
+.submit-svg-contour{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(251, 114, 153);
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+}
+
+
+@media (min-width:1200px) {
+    .submit-svg-contour {
+        width: 90px;
+        height: 34px;
+        gap: 5px;
+    }
+}
+
+/*宽屏显示元素*/
+@media (max-width:1200px) {
+    .wideScreenElement{
+        display: none;
+    }
+}
+
+/*导航栏logo图片*/
+.bilibili-logo-image{
+    position: absolute;
+    width: 162px;
+    height: 78px;
+    top: 64px;
+    left: 56px;
+}

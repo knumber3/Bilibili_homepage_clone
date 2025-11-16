@@ -1,0 +1,165 @@
+/*视频卡片*/
+.video-preview{
+    height: clamp(208px, calc(8.571vw + 113.7px), 232px);
+}
+
+/*视频封面*/
+.video-image-container{
+    display: flex;
+    position: relative;
+    height:65%;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.video-image-container img{
+    border-radius: 6px;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+/* 用伪元素加一层底部阴影 */
+.video-image-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%; /* 阴影范围，可调整 */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+    pointer-events: none; /* 不影响鼠标点击 */
+  }
+
+.video-info{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 17%;
+    margin-bottom: 2px;
+    margin-left: 1px;
+    z-index: 2;
+}
+
+.info-left{
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 75%;
+    padding-left: 6px;
+    padding-bottom: 3px;
+}
+
+.views-icon{
+    margin-right: 2px;
+    width: 18px;
+    height: 18px;
+    color: white;
+    padding-top: 2px;
+}
+
+.views-number{
+    color: white;
+    margin-right: 12px;
+    font-size: 13px;
+}
+
+.danmu-icon{
+    margin-right: 2px;
+    width: 18px;
+    height: 18px;
+    color: white;
+    padding-top: 2px;
+}
+
+.danmu-number{
+    color: white;
+    margin-right: 12px;
+    font-size: 13px;
+}
+
+.info-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+.duration{
+    color: white;
+    display: block;
+    padding-bottom: 2px;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*视频名称栏*/
+.video-info-card{
+    height: 35%;
+    padding-top: 6px;
+}
+
+.video-title{
+    height: 65%;
+    max-height: 2.8em;  /* 限制最多显示两行 */
+    font-size: 15px;
+    font-weight: 500;
+    padding-right: 20px;
+    padding-top: 3px;
+    cursor: pointer;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/*视频底栏（作者名称+发布时间）*/
+.author-date{
+    display: flex;
+    height: 35%;
+    font-size: 13px;
+}
+
+.author-name-container{
+    color: rgb(148, 153, 160);
+    display: flex;
+    width: auto;
+    align-items: center;
+    cursor: pointer;
+    text-overflow: ellipsis;
+}
+
+.author-name-icon{
+    height: 17px;
+    width: 17px;
+    margin-right: 2px;
+}
+
+.realease-date{
+    align-items: center;
+    color: rgb(148, 153, 160);
+    display: flex;
+    margin-left: 4px;
+    width: auto;
+    text-overflow: ellipsis;
+}
+
+@media(min-width:1380px)  {
+    .video-preview{
+        height: clamp(208px, calc(5.128vw + 137.23px), 224px);
+    }
+}
+
+
+
