@@ -1,5 +1,0 @@
-import './slider.js'
-import './generateVideos.js'
-import './tooltip.js'
-import './passwordInput.js'
-import './login.js'
