@@ -80,7 +80,7 @@ const icons = {
 async function loadVideos() {
     try {
         // 1. 读取JSON
-        const response = await fetch('../assets/data/vedio-data.json');
+        const response = await fetch('./assets/data/vedio-data.json');
         const videos = await response.json();
 
         const container = document.getElementById('main-part');
