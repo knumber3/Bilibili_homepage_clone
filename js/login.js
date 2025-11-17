@@ -100,4 +100,5 @@ membershipButton.addEventListener('click',() => {
 });
 
 
-//showLoginBox();
+showLoginBox();
+
